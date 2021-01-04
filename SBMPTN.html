@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SBMPTN </title>
+    <script src="aframe/library/aframe.min.js"></script>
+    <!-- include aframe-ar.js -->
+    <script src="aframe/library/aframe-ar.js"></script>
+    <!-- include text geometry -->
+    <script src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js">
+    </script>
+    <!-- Hide Debug UI -->
+    <!--
+    <style>
+        #arjsDebugUIContainer {
+            display: none;
+            visibility: hidden;
+        }
+    </style>
+-->
+</head>
+<a-assets>
+    <img id="bundar3" src="./assets/bundar3.jpg">
+    <img id="bulat5" src="./assets/bulat5.jpg">
+    <img id="bundar2" src="./assets/bundar2.jpg">
+    <img id="bulat6" src="./assets/bulat6.jpg">
+    <img id="bundar6" src="./assets/bundar6.jpg">
+    <img id="bulat3" src="./assets/bulat3.jpg">
+
+    <a-asset-item id="exoItalicFont"
+        src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2Fexo2BlackItalic.typeface.json?1490305922725">
+    </a-asset-item>
+</a-assets>
+
+<body style='margin : 0px; overflow: hidden; font-family: Monospace;'>
+    <a-scene embedded vr-mode-ui="enabled: false"
+        arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false;'>
+
+
+        <!-- handle matrix marker -->
+        <a-marker type='barcode' value='22'>
+            <a-plane position="-1 0 1.5" opacity="0" rotation="-90 0 0">
+                <a-plane line__10="start: -0.1 -0.2 0; end: 6.5 -0.2 0; color:#FF6100;" opacity="0"></a-plane>
+                <a-circle src="#bundar3" radius="1" position="1.4 1.5 0"></a-circle>
+                <a-circle color="#FF6100" radius="0.3" position="0.1 2.2 0">
+                    
+                </a-circle>
+
+                <a-text position="0 0.3 0.2" width="10" value="Persyaratan UTBK" color="#FF6100"></a-text>
+                <a-plane width="8.8" height="7.5" position="2.7 -4.1 0" color="white">
+                    <a-text position="-3.8 -0.1 0.5" width="8" value="
+                    a. Siswa SMA/MA/SMK Kelas XII pada tahun 2020 atau peserta didik Paket C tahun 2020.
+                    b. Lulusan SMA/MA/SMK/Sederajat tahun 2018 dan 2019 atau lulusan Paket C tahun 2018 dan 2019.
+                    c. Peserta mengikuti satu kali tes dengan ketentuan sebagai berikut:
+                            1. UTBK kelompok Saintek mengikuti tes TPS dan TKA Saintek
+                            2. UTBK kelompok Soshum mengikuti tes TPS dan TKA Soshum
+                            3. UTBK kelompok Campuran (Saintek dan Soshum) mengikuti tes TPS, TKA Saintek, dan TKA Soshum
+                    d. Membayar biaya UTBK."
+                        color="black"></a-text>
+
+                </a-plane>
+            </a-plane>
+        </a-marker>
+
+        <a-marker type='barcode' value='29'>
+            <a-plane position="-1 0 2.5" opacity="0" rotation="-90 0 0">
+                <a-plane line__10="start: -0.1 -0.2 0; end: 6.9 -0.2 0; color:#FF6100;" opacity="0"></a-plane>
+                <a-circle src="#bundar3" radius="1" position="1.4 1.5 0"></a-circle>
+                <a-circle color="#FF6100" radius="0.3" position="0.1 2.2 0">
+                    
+                </a-circle>
+
+                <a-text position="0 0.3 0.2" width="10" value="Tahapan UTBK" color="#FF6100"></a-text>
+                <a-plane width="8.9" height="7.1" position="3.1 -4.1 0" color="white">
+                    <a-text position="-3.6 -0.1 0.5" width="6" value="
+                    a. Registrasi akun Siswa LTMPT menggunakan NISN, NPSN, dan Tanggal Lahir pada tanggal 07 Februari – 05 April 2020 di laman portal.ltmpt.ac.id.
+                    b. Melakukan login menggunakan username/email dan password ke laman https://portal.ltmpt.ac.id.
+                    c. Memilih menu Verifikasi dan Validasi Data Siswa untuk mengisi biodata, mengunggah pas foto berwarna terbaru, dan verifikasi biodata.
+                    d. Memilih menu Pendaftaran UTBK. Memilih jenis dan sesi ujian, serta lokasi Pusat UTBK PTN untuk mendapatkan slip pembayaran UTBK.
+                    e. Membayar di Bank Mandiri, BNI, atau BTN menggunakan slip pembayaran kecuali bagi pendaftar beasiswa Kartu Indonesia Pintar Kuliah (KIP-K). Pembayaran harus dilakukan paling lambat 1 x 24 jam.
+                    f. Melakukan login kembali ke laman https://portal.ltmpt.ac.id, memilih menu Pendaftaran UTBK untuk mencetak kartu peserta UTBK.
+                    g. Mengikuti UTBK sesuai dengan hari, tanggal, sesi, dan lokasi Pusat UTBK PTN yang dipilih."
+                        color="black"></a-text>
+
+                </a-plane>
+            </a-plane>
+        </a-marker>
+
+        <a-marker type='barcode' value='21'>
+            <a-plane position="-1 0 1.5" opacity="0" rotation="-90 0 0">
+                <a-plane line__10="start: -0.1 -0.2 0; end: 6.3 -0.2 0; color:#C4EB2A;" opacity="0"></a-plane>
+                <a-circle src="#bulat5" radius="1" position="1.4 1.5 0"></a-circle>
+                <a-circle color="#C4EB2A" radius="0.3" position="0.1 2.2 0">
+                    
+                </a-circle>
+
+                <a-text position="0 0.2 0.2" width="10" value="Persyaratan SBMPTN" color="#C4EB2A"></a-text>
+                <a-plane width="8.7" height="7.1" position="3.8 -4.5 0" color="white">
+                    <a-text position="-3.9 -0.1 0.5" width="7"
+                        value="
+                    a. Siswa SMA/MA/SMK Kelas 12 pada tahun 2020, atau lulusan SMA/MA/SMK/Sederajat tahun 2018 dan 2019, atau lulusan Paket C tahun 2018, 2019, dan 2020.
+                    b. Bagi siswa SMA/MA/SMK/Sederajat lulusan tahun 2020 harus memiliki Surat Keterangan Lulus Pendidikan Menengah, yang sekurang-kurangnya memuat informasi jati diri dan foto berwarna terbaru yang bersangkutan dengan dibubuhi cap stempel yang sah.
+                    c. Bagi siswa lulusan SMA/MA/SMK/Sederajat tahun 2018 dan 2019 atau lulusan Paket C tahun 2018, 2019, dan 2020 harus memiliki ijazah.
+                    d. Memiliki kesehatan yang memadai sehingga tidak mengganggu kelancaran proses studi.
+                    e. Memiliki Nilai UTBK 2020.
+                    f. Mempunyai akun di LTMPT.
+                    g. Tidak lulus jalur SNMPTN 2020." color="black"></a-text>
+
+
+                </a-plane>
+            </a-plane>
+        </a-marker>
+
+
+        <a-marker type='barcode' value='32'>
+            <a-plane position="-1 0 1.5" opacity="0" rotation="-90 0 0">
+                <a-plane line__10="start: -0.1 -0.2 0; end: 5.2 -0.2 0; color:#FF9933" opacity="0"></a-plane>
+                <a-circle src="#bundar2" radius="1" position="1.4 1.5 0"></a-circle>
+                <a-circle color="#FF9933" radius="0.3" position="0.1 2.2 0">
+                    
+                </a-circle>
+
+                 <a-text position="0 0.2 0.1" width="9" value="Tahapan SBMPTN" color="#FF9933"></a-text>
+
+                <a-plane width="8.5" height="6.5" position="3.5 -3.5 0" color="white">
+                    <a-text position="-3.9 -0.1 0.3" width="8" value="
+                    a. Pendaftaran SBMPTN 2020 dilakukan melalui laman portal.ltmpt.ac.id.
+                    b. Mengisi Biodata (kecuali bagi yang sudah terdaftar di SNMPTN 2020).
+                    c. Memilih PTN dan program studi dengan ketentuan bahwa pendaftar dapat memilih paling banyak dua program studi dalam satu PTN atau dua PTN.
+                    d. Mengunggah portofolio bagi pendaftar yang memilih program studi bidang seni dan olahraga. Tata cara pengisian borang portofolio dapat diunduh dari laman download.ltmpt.ac.id.
+                    e. Mengunggah dokumen lain sesuai dengan persyaratan pendaftaran SBMPTN 2020." color="black">
+                    </a-text>
+
+                </a-plane>
+            </a-plane>
+        </a-marker>
+
+
+        <a-marker type='barcode' value='14'>
+
+            <a-plane position="-1 0 1.5" opacity="0" rotation="-90 0 0">
+                <a-plane line__10="start: -0.1 -0.6 0; end: 4.9 -0.6 0; color:#EB117E;" opacity="0"></a-plane>
+                <a-circle src="#bulat3" radius="1" position="1.3 1.4 0"></a-circle>
+                <a-circle color="#EB117E" radius="0.3" position="0.1 2.2 0">
+                    
+                </a-circle>
+
+                <a-text position="0 -0.1 0.1" width="9" value="Portofolio pada \n Pendaftaran SBMPTN" color="#EB117E"></a-text>
+
+                <a-plane width="6.5" height="6.8" position="2.5 -4.1 0" color="white">
+                    <a-text position="-3.0 -0.1 0.2" width="6"
+                        value="Khusus untuk pendaftar Program Studi bidang Seni dan Olahraga, peserta wajib mengunggah portofolio sebagai materi tambahan untuk proses seleksi dalam SBMPTN 2020. Jenis Portofolio SBMPTN 2020 adalah sebagai berikut (apabila ada tambahan jenis portofolio akan diinformasikan melalui website resmi LTMPT).
+
+                            1. Portofolio Olahraga
+                            2. Portofolio Seni Rupa, Desain, dan Kriya
+                            3. Portofolio Tari (termasuk Sendratasik/Seni Pertunjukan opsi Tari)
+                            4. Portofolio Teater (termasuk Sendratasik/Seni Pertunjukan opsi Teater/Drama)
+                            5. Portofolio Musik (termasuk Sendratasik/Seni Pertunjukan opsi Musik)
+                            6. Portofolio Seni Karawitan
+                            7. Portofolio Etnomusikologi
+                            8. Portofolio Fotografi
+                            9. Portofolio Film dan Televisi
+                            10.Portofolio Seni Pedalangan"
+                        color="black"></a-text>
+
+                </a-plane>
+            </a-plane>
+        </a-marker>
+
+
+         <a-marker type='barcode' value='16'>
+            <a-plane position="0 0 0" opacity="0" rotation="-90 0 0">
+                <a-plane line__10="start: -0.1 -0.1 0; end: 4.9 -0.1 0; color:#EB117E;" opacity="0"></a-plane>
+                <a-circle src="#bulat3" radius="1" position="1.3 1.4 0"></a-circle>
+                <a-circle color="#EB117E" radius="0.3" position="0.1 2.2 0">
+                    
+                </a-circle>
+
+                <a-text position="0 0.2 0.1" width="9" value="Biaya UTBK" color="#EB117E"></a-text>
+
+                <a-plane width="7.8" height="5.5" position="2.5 -3.2 0" color="white">
+                    <a-text position="-3.3 -0.1 0.2" width="7"
+                        value="
+                        a. Biaya yang ditanggung oleh peserta adalah sebesar :
+                                1. Rp200.000,00 (dua ratus ribu rupiah) untuk kelompok ujian Saintek atau Soshum,
+                                2. Rp300.000,00 (tiga ratus ribu rupiah) untuk kelompok ujian Campuran.
+                        b. Biaya UTBK dapat dibayarkan melalui Bank Mandiri, BNI, atau BTN.
+                        c. Biaya yang sudah dibayarkan tidak dapat ditarik kembali dengan alasan apa pun.
+                        d. Calon peserta KIP Kuliah (KIP-K) yang dinyatakan lolos persyaratan tidak dipungut biaya."
+                        color="black"></a-text>
+
+                </a-plane>
+            </a-plane>
+
+        </a-marker>
+
+        <a-marker type='barcode' value='1'>
+
+            <a-plane position="0 2 0" opacity="0" rotation="-90 0 0">s
+                <a-plane width="7.2" height="3" position="0 -0.1 0" color="white">
+                    <a-text position="-3.5 0 0.3" width="10"
+                        value="Arahkan kamera Smartphone Anda \n ke marker yang tersedia \n untuk menampilkan \n informasi Augmented Reality"
+                        color="black"></a-text>
+                </a-plane>
+
+        </a-marker>
+
+        <!-- add a simple camera -->
+        <a-entity camera></a-entity>
+
+
+    </a-scene>
+</body>
+
+</html>

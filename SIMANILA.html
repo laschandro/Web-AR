@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>SIMANILA </title>
+  <script src="aframe/library/aframe.min.js"></script>
+  <!-- include aframe-ar.js -->
+  <script src="aframe/library/aframe-ar.js"></script>
+  <!-- include text geometry -->
+  <script src="https://unpkg.com/aframe-text-geometry-component@0.5.1/dist/aframe-text-geometry-component.min.js">
+  </script>
+  <!-- Hide Debug UI -->
+  <!--
+    <style>
+        #arjsDebugUIContainer {
+            display: none;
+            visibility: hidden;
+        }
+    </style>
+-->
+</head>
+
+<a-assets>
+  <a-asset-item id="mp4" src="kamus_lampung.mp4"></a-asset-item>
+
+  <img id="bulat4" src="./assets/bulat4.jpg">
+  <img id="bulat5" src="./assets/bulat5.jpg">
+  <img id="bulat7" src="./assets/bulat7.jpg">
+  <img id="bundar2" src="./assets/bundar2.jpg">
+  <img id="bundar6" src="./assets/bundar6.jpg">
+  <img id="bundar8" src="./assets/bundar8.jpg">
+  <img id="sertifikat-paten" src="./assets/sertifikat-paten.jpg">
+
+
+  <a-asset-item id="exoItalicFont"
+    src="https://cdn.glitch.com/c719c986-c0c5-48b8-967c-3cd8b8aa17f3%2Fexo2BlackItalic.typeface.json?1490305922725">
+  </a-asset-item>
+</a-assets>
+
+<body style='margin : 0px; overflow: hidden; font-family: Monospace;'>
+  <a-scene embedded vr-mode-ui="enabled: true"
+    arjs='detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false;'>
+
+    <a-entity camera></a-entity>
+
+
+    <!-- handle matrix marker -->
+    <a-marker type='barcode' value='10'>
+      <a-plane position="-1 0 1.5" opacity="0" rotation="-90 0 0">
+        <a-plane line__10="start: -0.1 -0.5 0; end: 6.3 -0.5 0; color:cyan;" opacity="0"></a-plane>
+        <a-circle src="#bulat4" radius="1" position="1.4 1.5 0"></a-circle>
+        <a-circle color="cyan" radius="0.3" position="0.3 2.2 0.2">
+          
+        </a-circle>
+
+        <a-text position="0 0 0.2" width="11" value=" Prosedur Pendaftaran \n SMMPTN BARAT " color="cyan"></a-text>
+        <a-plane width="8.6" height="6.9" position="3.1 -4.4 0" color="white">
+          <a-text position="-3.9 -0.1 0.5" width="8"
+            value="
+            1. Penyelenggaraan seleksi berdasar hasil ujian tulis berbasis cetak (UTBC) atau kombinasi hasil ujian tulis dan ujian keterampilan dan ujian lainnya.
+            2. Pendaftaran SMMPTN-BARAT 2020 dilakukan secara online.
+            3. Peserta yang memilih prodi-prodi yang masuk pada kelompok Saintek atau Soshum saja dapat memilih sebanyak-banyak 3 prodi pada satu PTN atau lebih.
+            4. Peserta yang memilih prodi-prodi yang masuk kelompok Campuran (Saintek dan Soshum) dapat memilih sebanyak-banyak 4 prodi pada satu PTN atau lebih.
+            5. Peserta diwajibkan untuk memilih prodi pada PTN tempat mengikuti ujian sebagai pilihan pertama."
+            color="black"></a-text>
+        </a-plane>
+      </a-plane>
+    </a-marker>
+
+    <a-marker type='barcode' value='3'>
+      <a-plane position="-1 0 1.5" opacity="0" rotation="-90 0 0">
+        <a-text position="-1.5 2.5 0.5" width="14" value="Persyaratan SMMPTN BARAT" color="#FF6100"></a-text>
+        <a-plane width="8.9" height="10" position="2.7 -1.9 0" color="white">
+          <a-text position="-3.8 -0.3 0.5" width="6" value="
+        A. Pendaftaran
+            1. Bagi lulusan SMA/SMK/MA atau sederajat dan Paket C, harus memiliki ijazah.
+            2. Bagi lulusan SMA/SMK/MA atau sederajat dan Paket C tahun 2020, telah memiliki Surat Keterangan Lulus yang memuat sekurang-kurangnya informasi jati diri, pas foto yang bersangkutan, serta dibubuhi cap yang sah.
+            3. Peserta seleksi dalam kondisi kesehatan yang memadai sehingga tidak mengganggu proses pembelajaran pada program studinya.
+            4. jazah adalah 3 tahun terakhir 2018, 2019, dan 2020 kecuali untuk beberapa universitas: 
+                a. UMRAH, UNJA, UTU dan Unimal tahun ijazah 5 tahun terakhir (2016, 2017, 2018, 2019, dan 2020); 
+                b. SBI menerima tahun ijazah 10 tahun terakhir yaitu mulai ijazah dari tahun 2011 sampai dengan 2020 dan Paket C maksimal umur 25 tahun; dan 
+                c. UPR 3 tahun terakhir (2018, 2019, dan 2020) untuk Fakultas Kedokteran dan 5 tahun terakhir (2016, 2017, 2018, 2019, dan 2020) untuk fakultas lainnya.
+        B. Penerimaan
+            Peserta seleksi lulus pendidikan menengah, lulus SMM PTN-BARAT 2020, sehat, dan memenuhi persyaratan lain yang ditetapkan oleh masing-masing PTN penerima, termasuk besaran nilai UKT dan Sumbangan Pengembangan Institusi (SPI) atau Biaya Pengembangan Institusi (BPI) yang besarnya dapat dilihat pada website perguruan tinggi masing-masing." color="black"></a-text>
+        </a-plane>
+      </a-plane>
+    </a-marker>
+
+    <a-marker type='barcode' value='9'>
+      <a-plane position="-1 0 1.5" opacity="0" rotation="-90 0 0">
+         <a-text position="-1.5 4.0 0.5" width="15" value="PROSEDUR \n PENDAFTARAN PMPAP" color="#FF6100"></a-text>
+        <a-plane width="8.9" height="7.9" position="2.7 -0.9 0" color="white">
+          <a-text position="-3.8 -0.2 0.5" width="8"
+            value="
+              1. Mendaftar secara online pada laman https://admisi.unila.ac.id, pendaftaran dimulai tanggal 4-10 Agustus 2020
+              2. Peserta wajib mengirimkan berkas pendaftaran yang diminta menggunakan pos/ekspedisi ke sekretariat BPPMB lt 3. Gedung Rektorat Unila, dan bukti pengiriman diunggah di laman pendaftaran (cap pos/ekspedisi tertanggal 10 Agustus 2020)
+              3. SeTidak dipungut biaya pendaftaran dan jika diterima yang bersangkutan dibebaskan dari kewajiban membayar UKT selama 8 semester.
+              4. Peserta hanya boleh memilih satu Program Studi saja di luar Fakultas Kedokteran (FK).
+              5. Kelulusan peserta berdasarkan dua tahap seleksi yakni seleksi adminstrasi dan seleksi wawancara yang diumumkan pada laman https://simanila.unila.ac.id
+              " color="black">
+          </a-text>
+
+        </a-plane>
+      </a-plane>
+    </a-marker>
+
+    <a-marker type='barcode' value='13'>
+      <a-plane position="-1 0 1.5" opacity="0" rotation="-90 0 0">
+        <a-text position="-3.5 5.2 0.5" width="10" value="PERSYARATAN PMPAP" color="#CCCC00">
+        </a-text>
+        <a-plane width="8.2" height="10.7" position="0.1 0.6 0" color="white">
+          <a-text position="-3.8 -0.5 0.2" width="6"
+            value="
+            1. Berasal SMA/ MA/ SMK/ MAK/sederajat di Provinsi Lampung yang lulus tahun 2018, 2019, 2020
+            2. Bagi lulusan    tahun    2018    dan    2019    telah    memiliki    ijazah SMA/ MA/ SMK/ MAK/sederajat.
+            3. Bagi lulusan tahun 2020 sekurang-kurangnya telah memiliki Surat Keterangan Hasil Ujian Nasional (SKHUN) atau Surat Keterangan Lulus dari Kepala Sekolah yang dilengkapi dengan pasfoto terbaru dan dibubuhi cap.
+            4. Jurusan IPA boleh memilih Saintek sedangkan Jurusan IPS dan Bahasa hanya Soshum saja
+            5. Berasal dari keluarga TIDAK MAMPU yang dibuktikan dengan surat pernyataan dari Kepala Desa/ Kepala Kampung/ Kepala Pekon/ Lurah dan surat pernyataan dari Kepala Sekolah yang bersangkutan.
+            6. Tidak pernah    tinggal    kelas    selama   menempuh   pendidikan   di SMA/ MA/ SMK/ MAK/sederajat.
+            7. Nilai raport rata-rata setiap semester, dari semester I sampai semester VI minimal 75 (skala 100) atau 7,5 (skala 10).
+            8. Tidak terdaftar sebagai peserta SMMPTN, bagi yang sudah mendaftar di SMMPTN sebelum pengumuman ini dikeluarkan jika memenuhi syarat dan ingin mengikuti PMPAP agar melapor kepada Panitia Simanila PMPAP dengan membuat surat pernyataan di atas materai.
+            9. Tidak terdaftar sebagai peserta penerima KIP yang telah dinyatakan lolos pada jalur SNMPTN 2020.
+            10.Membuat pernyataan bersedia digugurkan apabila diterima SBMPTN 2020."
+            color="black"></a-text>
+        </a-plane>
+      </a-plane>
+
+    </a-marker>
+
+    <a-marker type='barcode' value='23'>
+      <a-plane position="-1 0 1.5" opacity="0" rotation="-90 0 0">
+        <a-plane line__10="start: -0.1 -0.6 0; end: 6.3 -0.6 0; color:#C4EB2A;" opacity="0"></a-plane>
+        <a-circle src="#bulat5" radius="1" position="1.4 1.5 0"></a-circle>
+        <a-circle color="#C4EB2A" radius="0.3" position="0.2 2.2 0.2">
+          
+        </a-circle>
+
+        <a-text position="0 -0.1 0.2" width="11" value="PROSEDUR PENDAFTARAN \n Jalur Prestasi Khusus" color="#C4EB2A"></a-text>
+        <a-plane width="8.7" height="8.7" position="3.2 -5.1 0" color="white">
+          <a-text position="-3.9 -0.1 0.5" width="8"
+            value="
+            1. Mendaftar secara online pada laman http://admisi.unila.ac.id, pendaftaran dimulai tanggal 4-10 Agustus 2020.
+            2. Membayar uang pendaftaran (pembelian PIN) sebesar Rp. 200.000,00 melalui Bank BNI.
+            3. Apabila diterima akan dikenakan pembayaran UKT sesuai dengan kemampuan ekonomi keluarga yang bersangkutan.
+            4. Peserta boleh mengusulkan 2 (dua) Program Studi lintas Fakultas sesuai jurusan asal Sekolah.
+            5. Jurusan IPA boleh memilih Saintek dan Soshum sedangkan Jurusan IPS hanya Soshum saja.
+            6. Peserta wajib mengirimkan berkas pendaftaran yang diminta menggunakan pos/ekspedisi ke sekretariat BPPMB lt 3. Gedung Rektorat Unila, dan bukti pengiriman diunggah di laman pendaftaran.
+            7. Khusus Fakultas Kedokteran peserta wajib tidak buta warna dan sehat jasmani dan rohani (Jika dinyatakan lolos harus mengirimkan hasil tes tidak buta warna dan hasil tes kejiwaan/MMPI dari instansi yang berwenang)."
+            color="black"></a-text>
+
+
+        </a-plane>
+      </a-plane>
+    </a-marker>
+
+    <a-marker type='barcode' value='24'>
+      <a-plane position="-1 0 1.5" opacity="0" rotation="-90 0 0">
+        <a-plane line__10="start: -0.1 -0.1 0; end: 6.3 -0.1 0; color:#FF9933;" opacity="0"></a-plane>
+        <a-circle src="#bundar2" radius="1" position="1.4 1.5 0"></a-circle>
+        <a-circle color="#FF9933" radius="0.3" position="0.2 2.2 0.2">
+          
+        </a-circle>
+
+        <a-text position="0 0.3 0.2" width="10" value="Persyaratan Jalur Prestasi Khusus" color="#FF9933"></a-text>
+        <a-plane width="8.7" height="5.9" position="3.8 -3.6 0" color="white">
+          <a-text position="-3.9 -0.1 0.5" width="8"
+            value="
+            1. Lulusan Sekolah Menengah Atas (SMA)/Sekolah Menengah Kejuruan (SMK)/Madrasah Aliyah (MA)/Sederajat di Provinsi Lampung atau Luar Provinsi Lampung tapi merupakan putra/putri daerah Lampung yang dibuktikan dengan KTP siswa/orangtua berdomisili di Lampung yang merupakan lulusan Tahun 2018, 2019, 2020;
+            2. Nilai raport rata-rata setiap semester, dari semester I sampai semester VI minimal 75 (skala 100) atau 7,5 (skala 10).
+            3. Memiliki prestasi/juara di bidang akademik/bidang olah raga/bidang seni dan/atau bidang keagamaan yang dibuktikan dengan memiliki piagam/sertifikat/medali;"
+            color="black"></a-text>
+
+        </a-plane>
+      </a-plane>
+    </a-marker>
+
+
+    <a-marker type='barcode' value='27'>
+      <a-plane position="-1 0 1.5" opacity="0" rotation="-90 0 0">
+        <a-plane line__10="start: -0.1 -0.1 0; end: 3.8 -0.1 0; color:#FFFFFF;" opacity="0"></a-plane>
+        <a-circle src="#bundar6" radius="1" position="1.4 1.5 0"></a-circle>
+        <a-circle color="#691269" radius="0.3" position="0.2 2.2 0.2">
+          
+        </a-circle>
+
+        <a-text position="0 0.3 0.2" width="11" value="Prestasi/Juara Bidang Akademik:" color="#FF9933"></a-text>
+        <a-plane width="8.7" height="5.5" position="3.8 -3.4 0" color="white">
+          <a-text position="-3.9 0.1 0.5" width="8"
+            value="
+            1. Juara 1 (satu) Olimpiade Sains SMA sederajat minimal Tingkat Provinsi
+            2. Juara Lomba Cepat Tepat (LCT) dalam rangka Dies Natalis Universitas Lampung sesuai SK tentang Penetapan Pemenang Lomba Cepat Tepat (LCT) Bidang IPA/IPS Tingkat SMA/MA Se-Provinsi Lampung Dalam Rangka Dies Natalis Ke-54 Universitas Lampung Tahun 2019.
+            3. Juara Olimpiade Sains, Matematika, dan Komputer (Osamakom) FMIPA Unila tahun 2019 dalam rangka perayaan Dies Natalis Ke 54 Unila." color="black"></a-text>
+        </a-plane>
+      </a-plane>
+    </a-marker>
+
+    <a-marker type='barcode' value='25'>
+      <a-plane position="-1 0 1.5" opacity="0" rotation="-90 0 0">
+        <a-plane line__10="start: -0.1 -0.2 0; end: 6.2 -0.2 0; color:#CCCC00;" opacity="0"></a-plane>
+        <a-circle src="#bundar8" radius="1" position="1.4 1.5 0"></a-circle>
+        <a-circle color="#CCCC00" radius="0.3" position="0.2 2.2 0.2">
+          
+        </a-circle>
+
+        <a-text position="0 0.3 0.2" width="11" value="Prestasi/Juara Bidang Olahraga:" color="#CCCC00"></a-text>
+        <a-plane width="8.7" height="5.5" position="3.8 -2.1 0" color="white">
+          <a-text position="-3.9 0.1 0.5" width="8"
+            value="
+            1. Prestasi pada salah satu cabang olahraga minimal juara 1 di tingkat provinsi (PraPON, PORPROP), atau tingkat Nasional (O2SN, PON, Kejurnas) atau tingkat Internasional (Sea Games, Asean Games, Olimpiade, dan lain-lain).
+            2. Kejuaraan merupakan event resmi yang diselenggarakan oleh induk Organisasi olah raga atau KONI (dibuktikan dengan surat rekomendasi).
+            3. Diutamakan untuk kejuaraan bidang perorangan."
+            color="black"></a-text>
+
+        </a-plane>
+      </a-plane>
+    </a-marker>
+
+
+    <a-marker type='barcode' value='1'>
+
+      <a-plane position="0 2 0" opacity="0" rotation="-90 0 0">s
+        <a-plane width="7.2" height="3" position="0 -0.1 0" color="white">
+          <a-text position="-3.5 0 0.3" width="10"
+            value="Arahkan kamera Smartphone Anda \n ke marker yang tersedia \n untuk menampilkan \n informasi Augmented Reality"
+            color="black"></a-text>
+        </a-plane>
+
+    </a-marker>
+
+    <!-- add a simple camera -->
+    <a-entity camera></a-entity>
+
+  </a-scene>
+</body>
+
+</html>
